@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./proyecto_raciones_bovino",
+        "./proyecto_raciones_bovino"
+    ]
+}
