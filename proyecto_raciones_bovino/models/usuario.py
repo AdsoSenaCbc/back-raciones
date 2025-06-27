@@ -105,7 +105,7 @@ class Usuario(db.Model):
             # Buscar si ya existe un admin
             admin_existente = Usuario.query.join(Usuario.rol).filter(
                 db.and_(Usuario.email == 'admin@racionesbovino.com',
-                       db.text("rol_usuario.nombre_rol = 'Administrador'"))
+                    db.text("rol_usuario.nombre_rol = 'Administrador'"))
             ).first()
             
             if not admin_existente:
